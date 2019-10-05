@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041535FE23466365003BA2D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041535FD23466365003BA2D2 /* AppDelegate.swift */; };
+		0415360023466365003BA2D2 /* DuetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041535FF23466365003BA2D2 /* DuetViewController.swift */; };
+		0415360223466367003BA2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415360123466367003BA2D2 /* Assets.xcassets */; };
+		0415360523466367003BA2D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0415360323466367003BA2D2 /* Main.storyboard */; };
+		041536102346677E003BA2D2 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415360F2346677E003BA2D2 /* Shell.swift */; };
+		04153613234667C1003BA2D2 /* ShellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04153612234667C1003BA2D2 /* ShellDelegate.swift */; };
+		04C49FF52346BEEE00F8A740 /* SerialMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49FF42346BEEE00F8A740 /* SerialMonitor.swift */; };
+		04C49FF92346C22B00F8A740 /* SerialMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49FF82346C22B00F8A740 /* SerialMonitorDelegate.swift */; };
+		04C49FFD2347021700F8A740 /* DuetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49FFC2347021700F8A740 /* DuetViewModel.swift */; };
+		04C49FFF234710BF00F8A740 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49FFE234710BF00F8A740 /* WindowController.swift */; };
+		04EAB1542349373F00CCACA8 /* DuetDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EAB1532349373E00CCACA8 /* DuetDataType.swift */; };
+		04ED44C32346AD6F00B240C4 /* ShellCommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED44C22346AD6F00B240C4 /* ShellCommandType.swift */; };
+		81C6DED1FCB330946613AF9E /* Pods_DuetMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87C6F647E8109A6AD094458 /* Pods_DuetMonitor.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041535FA23466365003BA2D2 /* DuetMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuetMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041535FD23466365003BA2D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041535FF23466365003BA2D2 /* DuetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetViewController.swift; sourceTree = "<group>"; };
+		0415360123466367003BA2D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0415360423466367003BA2D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0415360623466367003BA2D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0415360723466367003BA2D2 /* DuetMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DuetMonitor.entitlements; sourceTree = "<group>"; };
+		0415360F2346677E003BA2D2 /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		04153612234667C1003BA2D2 /* ShellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellDelegate.swift; sourceTree = "<group>"; };
+		04C49FF42346BEEE00F8A740 /* SerialMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialMonitor.swift; sourceTree = "<group>"; };
+		04C49FF82346C22B00F8A740 /* SerialMonitorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialMonitorDelegate.swift; sourceTree = "<group>"; };
+		04C49FFC2347021700F8A740 /* DuetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetViewModel.swift; sourceTree = "<group>"; };
+		04C49FFE234710BF00F8A740 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		04EAB1532349373E00CCACA8 /* DuetDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetDataType.swift; sourceTree = "<group>"; };
+		04ED44C22346AD6F00B240C4 /* ShellCommandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellCommandType.swift; sourceTree = "<group>"; };
+		A87C6F647E8109A6AD094458 /* Pods_DuetMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuetMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B96F20877A14262ED1B893 /* Pods-DuetMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuetMonitor.debug.xcconfig"; path = "Target Support Files/Pods-DuetMonitor/Pods-DuetMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		FCA06819864F08ADFC611293 /* Pods-DuetMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuetMonitor.release.xcconfig"; path = "Target Support Files/Pods-DuetMonitor/Pods-DuetMonitor.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041535F723466365003BA2D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C6DED1FCB330946613AF9E /* Pods_DuetMonitor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041535F123466365003BA2D2 = {
+			isa = PBXGroup;
+			children = (
+				041535FC23466365003BA2D2 /* DuetMonitor */,
+				041535FB23466365003BA2D2 /* Products */,
+				EAE7923B2B2786575DCC46BB /* Pods */,
+				67A52DAE2C61CC77D5CBED6E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		041535FB23466365003BA2D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041535FA23466365003BA2D2 /* DuetMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041535FC23466365003BA2D2 /* DuetMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				04C49FF32346BED500F8A740 /* Serial Monitor */,
+				04153611234667B1003BA2D2 /* Shell */,
+				04C49FFC2347021700F8A740 /* DuetViewModel.swift */,
+				041535FF23466365003BA2D2 /* DuetViewController.swift */,
+				04C49FFE234710BF00F8A740 /* WindowController.swift */,
+				0415360123466367003BA2D2 /* Assets.xcassets */,
+				0415360323466367003BA2D2 /* Main.storyboard */,
+				0415360623466367003BA2D2 /* Info.plist */,
+				041535FD23466365003BA2D2 /* AppDelegate.swift */,
+				0415360723466367003BA2D2 /* DuetMonitor.entitlements */,
+			);
+			path = DuetMonitor;
+			sourceTree = "<group>";
+		};
+		04153611234667B1003BA2D2 /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				0415360F2346677E003BA2D2 /* Shell.swift */,
+				04153612234667C1003BA2D2 /* ShellDelegate.swift */,
+				04ED44C22346AD6F00B240C4 /* ShellCommandType.swift */,
+			);
+			path = Shell;
+			sourceTree = "<group>";
+		};
+		04C49FF32346BED500F8A740 /* Serial Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				04C49FF82346C22B00F8A740 /* SerialMonitorDelegate.swift */,
+				04C49FF42346BEEE00F8A740 /* SerialMonitor.swift */,
+				04EAB1532349373E00CCACA8 /* DuetDataType.swift */,
+			);
+			path = "Serial Monitor";
+			sourceTree = "<group>";
+		};
+		67A52DAE2C61CC77D5CBED6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A87C6F647E8109A6AD094458 /* Pods_DuetMonitor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAE7923B2B2786575DCC46BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8B96F20877A14262ED1B893 /* Pods-DuetMonitor.debug.xcconfig */,
+				FCA06819864F08ADFC611293 /* Pods-DuetMonitor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041535F923466365003BA2D2 /* DuetMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0415360A23466367003BA2D2 /* Build configuration list for PBXNativeTarget "DuetMonitor" */;
+			buildPhases = (
+				7CD0DE3B2B9F44400F371327 /* [CP] Check Pods Manifest.lock */,
+				041535F623466365003BA2D2 /* Sources */,
+				041535F723466365003BA2D2 /* Frameworks */,
+				041535F823466365003BA2D2 /* Resources */,
+				C8CFC0B4D23C2C8463E99074 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuetMonitor;
+			productName = DuetMonitor;
+			productReference = 041535FA23466365003BA2D2 /* DuetMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041535F223466365003BA2D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Jing Wei Li";
+				TargetAttributes = {
+					041535F923466365003BA2D2 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 041535F523466365003BA2D2 /* Build configuration list for PBXProject "DuetMonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041535F123466365003BA2D2;
+			productRefGroup = 041535FB23466365003BA2D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041535F923466365003BA2D2 /* DuetMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041535F823466365003BA2D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0415360223466367003BA2D2 /* Assets.xcassets in Resources */,
+				0415360523466367003BA2D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CD0DE3B2B9F44400F371327 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DuetMonitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8CFC0B4D23C2C8463E99074 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DuetMonitor/Pods-DuetMonitor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DuetMonitor/Pods-DuetMonitor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DuetMonitor/Pods-DuetMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041535F623466365003BA2D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EAB1542349373F00CCACA8 /* DuetDataType.swift in Sources */,
+				04C49FF52346BEEE00F8A740 /* SerialMonitor.swift in Sources */,
+				04C49FFF234710BF00F8A740 /* WindowController.swift in Sources */,
+				04C49FF92346C22B00F8A740 /* SerialMonitorDelegate.swift in Sources */,
+				04C49FFD2347021700F8A740 /* DuetViewModel.swift in Sources */,
+				0415360023466365003BA2D2 /* DuetViewController.swift in Sources */,
+				04153613234667C1003BA2D2 /* ShellDelegate.swift in Sources */,
+				04ED44C32346AD6F00B240C4 /* ShellCommandType.swift in Sources */,
+				041535FE23466365003BA2D2 /* AppDelegate.swift in Sources */,
+				041536102346677E003BA2D2 /* Shell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0415360323466367003BA2D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0415360423466367003BA2D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0415360823466367003BA2D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0415360923466367003BA2D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0415360B23466367003BA2D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B96F20877A14262ED1B893 /* Pods-DuetMonitor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DuetMonitor/DuetMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NDBTK98VL3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DuetMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingweili.DuetMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0415360C23466367003BA2D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA06819864F08ADFC611293 /* Pods-DuetMonitor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DuetMonitor/DuetMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NDBTK98VL3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DuetMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingweili.DuetMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041535F523466365003BA2D2 /* Build configuration list for PBXProject "DuetMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0415360823466367003BA2D2 /* Debug */,
+				0415360923466367003BA2D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0415360A23466367003BA2D2 /* Build configuration list for PBXNativeTarget "DuetMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0415360B23466367003BA2D2 /* Debug */,
+				0415360C23466367003BA2D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041535F223466365003BA2D2 /* Project object */;
+}

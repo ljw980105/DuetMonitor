@@ -1,0 +1,16 @@
+PODS:
+  - ORSSerialPort (2.1)
+
+DEPENDENCIES:
+  - ORSSerialPort
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ORSSerialPort
+
+SPEC CHECKSUMS:
+  ORSSerialPort: d2d5d131797453430c557ba8dc7dcbcae20ff2e5
+
+PODFILE CHECKSUM: 29071e77a1cdfe4176d86f18ccfc8280688c0daa
+
+COCOAPODS: 1.7.5
