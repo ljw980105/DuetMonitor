@@ -13,6 +13,7 @@
 		0415360523466367003BA2D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0415360323466367003BA2D2 /* Main.storyboard */; };
 		041536102346677E003BA2D2 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415360F2346677E003BA2D2 /* Shell.swift */; };
 		04153613234667C1003BA2D2 /* ShellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04153612234667C1003BA2D2 /* ShellDelegate.swift */; };
+		04A4CCB123498FD000784792 /* NSAttributedString+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4CCB023498FD000784792 /* NSAttributedString+Styles.swift */; };
 		04C49FF52346BEEE00F8A740 /* SerialMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49FF42346BEEE00F8A740 /* SerialMonitor.swift */; };
 		04C49FF92346C22B00F8A740 /* SerialMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49FF82346C22B00F8A740 /* SerialMonitorDelegate.swift */; };
 		04C49FFD2347021700F8A740 /* DuetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49FFC2347021700F8A740 /* DuetViewModel.swift */; };
@@ -32,6 +33,7 @@
 		0415360723466367003BA2D2 /* DuetMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DuetMonitor.entitlements; sourceTree = "<group>"; };
 		0415360F2346677E003BA2D2 /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		04153612234667C1003BA2D2 /* ShellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellDelegate.swift; sourceTree = "<group>"; };
+		04A4CCB023498FD000784792 /* NSAttributedString+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Styles.swift"; sourceTree = "<group>"; };
 		04C49FF42346BEEE00F8A740 /* SerialMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialMonitor.swift; sourceTree = "<group>"; };
 		04C49FF82346C22B00F8A740 /* SerialMonitorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialMonitorDelegate.swift; sourceTree = "<group>"; };
 		04C49FFC2347021700F8A740 /* DuetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetViewModel.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		041535FC23466365003BA2D2 /* DuetMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				04A4CCAF23498FBA00784792 /* Extensions */,
 				04C49FF32346BED500F8A740 /* Serial Monitor */,
 				04153611234667B1003BA2D2 /* Shell */,
 				04C49FFC2347021700F8A740 /* DuetViewModel.swift */,
@@ -98,6 +101,14 @@
 				04ED44C22346AD6F00B240C4 /* ShellCommandType.swift */,
 			);
 			path = Shell;
+			sourceTree = "<group>";
+		};
+		04A4CCAF23498FBA00784792 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04A4CCB023498FD000784792 /* NSAttributedString+Styles.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		04C49FF32346BED500F8A740 /* Serial Monitor */ = {
@@ -248,6 +259,7 @@
 				04C49FFD2347021700F8A740 /* DuetViewModel.swift in Sources */,
 				0415360023466365003BA2D2 /* DuetViewController.swift in Sources */,
 				04153613234667C1003BA2D2 /* ShellDelegate.swift in Sources */,
+				04A4CCB123498FD000784792 /* NSAttributedString+Styles.swift in Sources */,
 				04ED44C32346AD6F00B240C4 /* ShellCommandType.swift in Sources */,
 				041535FE23466365003BA2D2 /* AppDelegate.swift in Sources */,
 				041536102346677E003BA2D2 /* Shell.swift in Sources */,

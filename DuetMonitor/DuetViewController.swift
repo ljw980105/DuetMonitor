@@ -16,9 +16,7 @@ class DuetViewController: NSViewController {
     @IBOutlet weak var ipAddressLabel: NSTextField!
     @IBOutlet weak var viewIPButton: NSButton!
     @IBOutlet weak var openInTerminalButton: NSButton!
-    
-    let standardInputFileHandle = FileHandle.standardInput
-    
+
     var serialMonitor: SerialMonitor?
     let viewModel = DuetViewModel()
     
@@ -31,6 +29,7 @@ class DuetViewController: NSViewController {
         Shell.shared.identifyDuet()
         viewIPButton.isEnabled = false
         openInTerminalButton.isEnabled = false
+        textView.documentView?.insertText(NSAttributedString(instructionString: viewModel.connectDuetInstructionString))
         
         NotificationCenter.default.addObserver(
             self,
@@ -53,12 +52,7 @@ class DuetViewController: NSViewController {
     @IBAction func controlInTerminal(_ sender: NSButton) {
         serialMonitor?.close()
         viewModel.openInTerminal()
-        textView.documentView?.insertText(NSAttributedString(
-            string: viewModel.terminalInstructionString,
-            attributes: [
-                NSAttributedString.Key.foregroundColor: NSColor.green,
-                NSAttributedString.Key.font: NSFont.boldSystemFont(ofSize: 13)
-            ]))
+        textView.documentView?.insertText(NSAttributedString(instructionString: viewModel.terminalInstructionString))
     }
     
 }
@@ -114,16 +108,12 @@ extension DuetViewController: SerialMonitorDelegate {
         nameLabel.stringValue = "Unknown"
         connectedStatusLabel.stringValue = "Disconnected ❌"
         viewIPButton.isEnabled = false
+        openInTerminalButton.isEnabled = false
         ipAddressLabel.stringValue = "IP Address: Unknown"
     }
     
     func monitor(_ monitor: SerialMonitor, didEncounterError error: Error) {
-        textView.documentView?.insertText(NSAttributedString(
-            string: error.localizedDescription,
-            attributes: [
-                NSAttributedString.Key.foregroundColor: NSColor.red,
-                NSAttributedString.Key.font: NSFont.boldSystemFont(ofSize: 13)
-            ]))
+        textView.documentView?.insertText(NSAttributedString(errorString: error.localizedDescription))
     }
     
 }

@@ -11,7 +11,7 @@ import ORSSerial
 
 class SerialMonitor: NSObject {
     let name: String?
-    var baudRate: Int = 9600
+    var baudRate: Int = 115200
     var serialPort: ORSSerialPort? {
         didSet {
             serialPort?.delegate = self
@@ -63,6 +63,7 @@ extension SerialMonitor: ORSSerialPortDelegate {
     func serialPortWasRemovedFromSystem(_ serialPort: ORSSerialPort) {
         if self.serialPort == serialPort {
             delegate?.monitorDidDisconnect(self)
+            delegate?.monitor(self, didEncounterError: NSError(domain: "\(name ?? "") has been removed from system", code: 0, userInfo: nil))
             self.serialPort = nil
         }
     }

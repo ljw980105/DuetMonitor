@@ -13,6 +13,7 @@ class DuetViewModel: NSObject {
     var duetName: String = ""
     let pasteboard = NSPasteboard.general
     let terminalInstructionString = "The terminal command has been copied to clipboard. Paste it into terminal and then run it to control duet via terminal\n"
+    let connectDuetInstructionString = "Connect Duet to this computer via usb\n"
     
     override init() {
         super.init()
