@@ -11,7 +11,7 @@ import ORSSerial
 
 class SerialMonitor: NSObject {
     let name: String?
-    var baudRate: Int = 115200
+    var baudRate: BaudRate = ._115200
     var serialPort: ORSSerialPort? {
         didSet {
             serialPort?.delegate = self
@@ -24,12 +24,13 @@ class SerialMonitor: NSObject {
     
     // MARK: - Initializers
     
-    
-    init(name: String, baudRate: Int = 115200) {
+    init(name: String, baudRate: BaudRate = ._115200) {
         self.name = name
-        serialPort = ORSSerialPort(path: "/dev/\(name)")
         self.baudRate = baudRate
         super.init()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+            self?.serialPort = ORSSerialPort(path: "/dev/\(name)")
+        }
     }
     
     init?(availablePorts: [ORSSerialPort] = ORSSerialPortManager.shared().availablePorts) {
@@ -69,7 +70,7 @@ extension SerialMonitor: ORSSerialPortDelegate {
     }
     
     func serialPortWasOpened(_ serialPort: ORSSerialPort) {
-        serialPort.baudRate = baudRate as NSNumber
+        serialPort.baudRate = baudRate.rawValue
     }
     
     func serialPort(_ serialPort: ORSSerialPort, didReceive data: Data) {
