@@ -9,7 +9,7 @@
 import Foundation
 
 class Shell: NSObject {
-    let baudRate = 115200
+    let baudRate: BaudRate = ._115200
     var name: String = ""
     
     weak var delegate: ShellDelegate?
@@ -20,7 +20,11 @@ class Shell: NSObject {
     }
     
     @discardableResult
-    func shell(args: [String], launchPath: String = "/usr/bin/env", commandType: ShellCommandType = .generic) -> Int32 {
+    func shell(
+        args: [String],
+        launchPath: String = "/usr/bin/env",
+        commandType: ShellCommandType = .generic) -> Int32
+    {
         var output : [String] = []
         var error : [String] = []
 

@@ -78,9 +78,23 @@ extension SerialMonitor: ORSSerialPortDelegate {
             delegate?.monitor(self, didReceiveString: string)
             if string.contains("IP address") {
                 if let iPAddress = string.components(separatedBy: ",").last?.components(separatedBy: " ").last {
-                    delegate?.monitor(self, didReceiveDuetData: .ipAddress(ip: iPAddress.trimmingCharacters(in: .whitespacesAndNewlines)))
+                    let ip = iPAddress.trimmingCharacters(in: .whitespacesAndNewlines)
+                    delegate?.monitor(self, didReceiveDuetData: .ipAddress(ip: ip))
+                    SavedData.set(type: DuetDataType.ipAddress(ip: ip).type, value: ip)
                 }
+            } else if string.contains("RepRapFirmware") {
+                let chunks = string
+                    .trimmingCharacters(in: .whitespacesAndNewlines)
+                    .split(separator: " ")
+                    .map { String($0) }
+                let version = chunks[6]
+                let date = chunks[8]
+                delegate?.monitor(self, didReceiveDuetData: DuetDataType.firmwareVersion(verion: version))
+                delegate?.monitor(self, didReceiveDuetData: .firmwareDate(date: date))
+                SavedData.set(type: DuetDataType.firmwareDate(date: date).type, value: date)
+                SavedData.set(type: DuetDataType.firmwareVersion(verion: version).type, value: date)
             }
+            try? SavedDataManager.save()
         }
     }
     
