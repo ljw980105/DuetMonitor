@@ -8,10 +8,6 @@
 
 import Cocoa
 
-struct SavedData {
-    let name: String
-    let value: String
-}
 
 enum SavedDataTableIdentifiers: String {
     case dataType = "dataTypeIdentifier"
@@ -19,13 +15,14 @@ enum SavedDataTableIdentifiers: String {
 }
 
 class SavedDataViewModel: NSObject {
-    let data: [SavedData] = [
-        SavedData(name: "IP Address", value: "192.168.1.10"),
-        SavedData(name: "Firmware version", value: "2.02")
-    ]
+    let frc = SavedData.fetchedResultsController
     
     override init() {
         super.init()
+    }
+    
+    func fetchInitialData() {
+        try? frc.performFetch()
     }
 
 }

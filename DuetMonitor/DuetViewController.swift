@@ -101,6 +101,7 @@ extension DuetViewController: SerialMonitorDelegate {
             ipAddressLabel.stringValue = "IP Address: \(ip)"
             viewIPButton.isEnabled = true
             viewModel.ipAddress = ip
+        default: break
         }
     }
     

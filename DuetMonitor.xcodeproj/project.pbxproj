@@ -16,6 +16,9 @@
 		0456B1282356C6000051608C /* SavedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456B1272356C6000051608C /* SavedDataViewController.swift */; };
 		0456B12A2356CAFE0051608C /* SavedDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456B1292356CAFE0051608C /* SavedDataViewModel.swift */; };
 		045D094B234D0C80009A2082 /* BaudRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D094A234D0C80009A2082 /* BaudRate.swift */; };
+		04960A76235781F400CB9981 /* SavedData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04960A74235781F400CB9981 /* SavedData.xcdatamodeld */; };
+		04960A81235787A600CB9981 /* SavedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04960A80235787A600CB9981 /* SavedData.swift */; };
+		04960A83235787E900CB9981 /* SavedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04960A82235787E900CB9981 /* SavedDataManager.swift */; };
 		04A4CCB123498FD000784792 /* NSAttributedString+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4CCB023498FD000784792 /* NSAttributedString+Styles.swift */; };
 		04C49FF52346BEEE00F8A740 /* SerialMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49FF42346BEEE00F8A740 /* SerialMonitor.swift */; };
 		04C49FF92346C22B00F8A740 /* SerialMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C49FF82346C22B00F8A740 /* SerialMonitorDelegate.swift */; };
@@ -39,6 +42,9 @@
 		0456B1272356C6000051608C /* SavedDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataViewController.swift; sourceTree = "<group>"; };
 		0456B1292356CAFE0051608C /* SavedDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataViewModel.swift; sourceTree = "<group>"; };
 		045D094A234D0C80009A2082 /* BaudRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaudRate.swift; sourceTree = "<group>"; };
+		04960A75235781F400CB9981 /* SavedData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SavedData.xcdatamodel; sourceTree = "<group>"; };
+		04960A80235787A600CB9981 /* SavedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedData.swift; sourceTree = "<group>"; };
+		04960A82235787E900CB9981 /* SavedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataManager.swift; sourceTree = "<group>"; };
 		04A4CCB023498FD000784792 /* NSAttributedString+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Styles.swift"; sourceTree = "<group>"; };
 		04C49FF42346BEEE00F8A740 /* SerialMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialMonitor.swift; sourceTree = "<group>"; };
 		04C49FF82346C22B00F8A740 /* SerialMonitorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialMonitorDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 		041535FC23466365003BA2D2 /* DuetMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				04960A73235781E000CB9981 /* Persistence */,
 				04A4CCAF23498FBA00784792 /* Extensions */,
 				04C49FF32346BED500F8A740 /* Serial Monitor */,
 				04153611234667B1003BA2D2 /* Shell */,
@@ -109,6 +116,16 @@
 				04ED44C22346AD6F00B240C4 /* ShellCommandType.swift */,
 			);
 			path = Shell;
+			sourceTree = "<group>";
+		};
+		04960A73235781E000CB9981 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				04960A74235781F400CB9981 /* SavedData.xcdatamodeld */,
+				04960A80235787A600CB9981 /* SavedData.swift */,
+				04960A82235787E900CB9981 /* SavedDataManager.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		04A4CCAF23498FBA00784792 /* Extensions */ = {
@@ -268,9 +285,12 @@
 				0456B12A2356CAFE0051608C /* SavedDataViewModel.swift in Sources */,
 				04C49FFD2347021700F8A740 /* DuetViewModel.swift in Sources */,
 				045D094B234D0C80009A2082 /* BaudRate.swift in Sources */,
+				04960A81235787A600CB9981 /* SavedData.swift in Sources */,
 				0415360023466365003BA2D2 /* DuetViewController.swift in Sources */,
 				04153613234667C1003BA2D2 /* ShellDelegate.swift in Sources */,
 				04A4CCB123498FD000784792 /* NSAttributedString+Styles.swift in Sources */,
+				04960A83235787E900CB9981 /* SavedDataManager.swift in Sources */,
+				04960A76235781F400CB9981 /* SavedData.xcdatamodeld in Sources */,
 				04ED44C32346AD6F00B240C4 /* ShellCommandType.swift in Sources */,
 				041535FE23466365003BA2D2 /* AppDelegate.swift in Sources */,
 				041536102346677E003BA2D2 /* Shell.swift in Sources */,
@@ -471,6 +491,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04960A74235781F400CB9981 /* SavedData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04960A75235781F400CB9981 /* SavedData.xcdatamodel */,
+			);
+			currentVersion = 04960A75235781F400CB9981 /* SavedData.xcdatamodel */;
+			path = SavedData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 041535F223466365003BA2D2 /* Project object */;
 }
