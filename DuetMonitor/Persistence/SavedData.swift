@@ -21,7 +21,7 @@ class SavedData: NSManagedObject {
         return frc
     }()
     
-    // inject a key-value pair of data into the database
+    /// inject a key-value pair of data into the database
     class func set(type: String, value: String, context: NSManagedObjectContext = SavedDataManager.context) {
         let request: NSFetchRequest<SavedData> = SavedData.fetchRequest()
         request.predicate = NSPredicate(format: "type = %@", type)
@@ -31,7 +31,7 @@ class SavedData: NSManagedObject {
                 savedData.type = type
                 savedData.value = value
             } else {
-                if let first = data.first, data.count > 1 {
+                if let first = data.first, data.count >= 1 {
                     first.value = value
                 }
             }
